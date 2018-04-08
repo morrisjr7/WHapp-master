@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/TFaddItem_Shop"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+
+        android:hint="@string/item_hint"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TFaddNotes_Shop"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@id/TFaddItem_Shop"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+
+        android:hint="@string/notes_hint"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bAddConfirm_Shop"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/TFaddNotes_Shop"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="40dp"
+        android:onClick="onShopConfirmClick"
+
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/bAddCancel_Shop"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/TFaddNotes_Shop"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginTop="40dp"
+        android:onClick="onShopCancelClick"
+
+        android:text="Cancel" />
+</RelativeLayout>

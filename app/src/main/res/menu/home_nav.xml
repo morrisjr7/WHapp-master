@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_shop"
+        android:title="Shopping List"
+        android:icon="@drawable/ic_shop"
+        />
+
+    <item
+        android:id="@+id/action_inv"
+        android:title="Inventory"
+        android:icon="@drawable/ic_inv"
+        />
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add"
+        android:icon="@drawable/ic_add"
+        />
+
+    <item
+        android:id="@+id/action_wh"
+        android:title="Warehouses"
+        android:icon="@drawable/ic_wh"
+        />
+
+    <item
+        android:id="@+id/action_set"
+        android:title="Settings"
+        android:icon="@drawable/ic_set"
+        />
+
+</menu>

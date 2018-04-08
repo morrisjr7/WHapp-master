@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/ShopList"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/bReturnShop">
+
+    </ListView>
+
+
+    <Button
+        android:id="@+id/bAddShop"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_below="@+id/ShopList"
+        android:layout_centerInParent="true"
+
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/bReturnShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Return" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bReturnShop"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="24dp"
+
+        android:layout_toEndOf="@+id/bReturnShop"
+        android:layout_toRightOf="@+id/bReturnShop"
+        android:text="Shopping List" />
+
+
+</RelativeLayout>

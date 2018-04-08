@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/TFaddItem"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/item_hint"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TFaddExp"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/TFaddItem"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/exp_hint"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TFaddPrice"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_below="@id/TFaddItem"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/price_hint"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TFaddLoc"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_below="@id/TFaddExp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/loc_hint"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/TFaddNotes"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@id/TFaddLoc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="@string/notes_hint"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bAddConfirm"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/TFaddNotes"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="10dp"
+        android:onClick="onAddConfirmClick"
+
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/bAddCancel"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/TFaddNotes"
+        android:layout_marginRight="30dp"
+
+        android:layout_marginTop="10dp"
+        android:onClick="onAddCancelClick"
+
+        android:text="Cancel" />
+</RelativeLayout>
